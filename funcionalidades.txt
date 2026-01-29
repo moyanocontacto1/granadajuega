@@ -1,0 +1,8 @@
+crear un partido 
+crearPartidoBtn.addEventListener('click', () => {
+    crearPartidoBtn.textContent = "Creando partido...";
+    setTimeout(() => {
+        crearPartidoBtn.textContent = "➕ Crear partido";
+        alert("Partido creado con éxito.");
+    }, 2000);
+});

@@ -1,0 +1,60 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Partidos de Fútbol</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Nuevo Partido</title>
+</head>
+<body>
+    <header>
+        <h1>Granada Juega</h1>
+    </header>
+     <section id="pantalla-crear-partido">
+        <h2>Formulario</h2>
+
+        <form>
+          <label>
+            Nombre del creador
+            <input type="text" placeholder="Ej: Lionel" required>
+          </label>
+          <br>
+          <label>
+            Fecha y hora
+            <input type="datetime-local" required>
+          </label>
+
+          <fieldset>
+            <legend>Tipo de fútbol</legend>
+
+            <label class="radio">
+              <input type="radio" name="tipo" value="7" required>
+              Fútbol 7
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="tipo" value="8">
+              Fútbol 8
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="tipo" value="11">
+              Fútbol 11
+            </label>
+          </fieldset>
+
+          <p id="precioCancha">
+  <strong>Precio de la cancha:</strong>
+  <span id="precioValor">—</span>
+</p>
+
+
+          <button id="crear-partido">Crear partido</button>
+          <button id="btn-cancelar">Cancelar</button>
+        </form>
+      </section>
+    <script src="index.js"></script>
+</body>
+</html>

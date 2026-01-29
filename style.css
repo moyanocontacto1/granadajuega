@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+
+}
+
+body {
+  color: #333;
+  background-color:#EDEDED;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  height: auto;
+  margin: 0;
+}
+
+main {
+  padding: 1rem;
+}
+
+header {
+  background: #1e7f3b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+#info{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+p{
+  font-family: "bebas neue", sans-serif;
+}
+
+#btn-nuevo-partido, #btn-seleccionar-partidos {
+  background: #1e7f3b;
+  color: white;
+  border-radius:1px;
+  border:  black solid ;
+  display: block;
+  margin: auto;
+   padding: 1.5rem 1.5rem;  
+}
+
+.app {
+  padding: 1rem;
+}
+
+.conteiner{
+     position: relative;   /* CLAVE */
+     width: 100%;
+}
+
+#img-cancha{
+   
+    display: block;
+    padding: 1rem;
+}
+
+.conteiner img{
+    
+    display: block;
+    border-radius: 12px;
+}
+
+#img-text{
+     position: absolute;   /* CLAVE */
+  bottom: 12px;
+  left: 12px;
+
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+
+  background: rgba(0, 0, 0, 0.55); /* contraste */
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+}
+
+h2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+   margin: 1rem 0 0.5rem;
+}
+
+
+.card-partido {
+  background: white;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+#pantalla-home-content{
+    position: relative;
+}
+
+#prox-part{
+  display: flex;
+}
+
+#prox-part-dos{
+  display: flex;
+}
+
+#apuntarse{
+    position: absolute;
+    padding-top: 0.5rem;
+    top: 11rem;
+    right: 5rem;
+    padding-left: 0.7rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    background-color: #43f19a;
+}
+
+#apuntarse:hover{
+    position: absolute;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    background-color: #43f19a;
+    font-size: 1.3rem;
+}
+
+.data-part-fecha{
+    position: absolute;
+    padding-top: 0.5rem;
+    top: 12.5rem;
+    padding-left: 1rem;
+    color: black;
+}
+
+.data-part-jugadores{
+    position: absolute;
+    padding-top: 0.5rem;
+    top: 14rem;
+    padding-left: 1rem;
+     color: black;
+}
+
+h3{
+    position: absolute;
+    padding-top: 0.5rem;
+    top: 18rem;
+    padding-left: 1rem;
+}
+
+#ubi{
+    position: absolute;
+    width: auto;
+    height: auto;
+    color: black;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    background-color: rgba(200, 200, 200, 0.5);
+    top: 20rem
+}
+
+.refrescar{
+    width: auto;
+    height: auto;
+    color: white;
+    background-color: #2cac6c;
+    position: relative;
+    border: 1px solid #1a6640;
+    border-radius: 0.2rem;
+}
+
+.anotados{
+    width: auto;
+    height: auto;
+    color: white;
+    background-color: #2cac6c;
+    position: relative;
+    border: 1px solid #1a6640;
+    border-radius: 0.2rem;
+}
+
+#conteiner{
+    position: relative;
+    display: flex
+}
+
+.refrescar:hover{
+    background-color:#1F7A4D;
+    color: black;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+input {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.radio {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.anotarse{
+   background: #2cac6c;
+   color: white;
+   border:  #1e7f3b solid 2px;
+   border-radius: 0.2rem;
+}
+
+.anotarse:hover{
+   background-color: #1e7f3b;
+   color: white;
+   border: #1F7A4D solid 2px;
+   font-size: 1.5rem;
+}
+
+conteiner-botones{
+    display: block;
+    gap: 3rem;
+}
+
+button {
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+p{
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+li {
+  background: white;
+  padding: 0.6rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+footer{
+  padding: 1rem;
+  background: black;
+  color: white;
+}
