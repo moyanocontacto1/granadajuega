@@ -47,7 +47,8 @@ p{
   border:  black solid ;
   display: block;
   margin: auto;
-   padding: 1.5rem 1.5rem;  
+  padding: 1.5rem 1.5rem;  
+  text-decoration: none;
 }
 
 .app {
