@@ -10,51 +10,61 @@
 </head>
 <body>
     <header>
-        <h1>Granada Juega</h1>
-    </header>
-     <section id="pantalla-crear-partido">
-        <h2>Formulario</h2>
+      <h1>Granada Juega⚽</h1> 
+     <h2 id="titulo">Siempre siguiendo la jugada</h2>
+     <hr class="hr-header">
+     <div id="parte-header">
+     <h2 id="header-content">➕ Nuevo Partido</h2>
+     <hr class="hr-header">
+     </div>
+</header>
+<main>
 
-        <form>
-          <label>
-            Nombre del creador
-            <input type="text" placeholder="Ej: Lionel" required>
-          </label>
-          <br>
-          <label>
-            Fecha y hora
-            <input type="datetime-local" required>
-          </label>
+    <section id="pantalla-crear-partido">
+                 <form>
+                        <label>
+                          Nombre y apellido del organizador
+                          <input type="text" placeholder="Ej: Pedro Garcia" required>
+                        </label>
+                        <label>
+                          Fecha y hora
+                          <input type="datetime-local" required>
+                        </label>
+                        <label>
+                          Agregar jugador (opcional)
+                          <input type="text" placeholder="Ej: Lucas Gonzalez">
+                        </label>
 
-          <fieldset>
-            <legend>Tipo de fútbol</legend>
+                        <fieldset>
+                          <legend>Tipo de fútbol</legend>
 
-            <label class="radio">
-              <input type="radio" name="tipo" value="7" required>
-              Fútbol 7
-            </label>
+                          <label class="radio">
+                            <input type="radio" name="tipo" value="7" required>
+                            Fútbol 7
+                          </label>
 
-            <label class="radio">
-              <input type="radio" name="tipo" value="8">
-              Fútbol 8
-            </label>
+                          <label class="radio">
+                            <input type="radio" name="tipo" value="8">
+                            Fútbol 8
+                          </label>
 
-            <label class="radio">
-              <input type="radio" name="tipo" value="11">
-              Fútbol 11
-            </label>
-          </fieldset>
+                          <label class="radio">
+                            <input type="radio" name="tipo" value="11">
+                            Fútbol 11
+                          </label>
+                        </fieldset>
 
-          <p id="precioCancha">
-  <strong>Precio de la cancha:</strong>
-  <span id="precioValor">—</span>
-</p>
+                        <p id="precioCancha">
+                <strong>Precio de la cancha:</strong>
+                <span id="precioValor">—</span>
+              </p>
 
 
-          <button id="crear-partido">Crear partido</button>
-          <button id="btn-cancelar">Cancelar</button>
-        </form>
+                        <button id="crear-partido">Crear partido</button>
+                        <button id="btn-cancelar">Cancelar</button>
+                </form>
       </section>
-    <script src="index.js"></script>
+    </main>
+    <script src="formulario.js"></script>
 </body>
 </html>

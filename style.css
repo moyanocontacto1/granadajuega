@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   font-family: system-ui, sans-serif;
-
 }
 
 body {
@@ -31,6 +30,19 @@ h1{
   letter-spacing: 1px;
 }
 
+#parte-header{
+    text-align: left;
+}
+
+#titulo{
+  font-size:0.9rem;
+  padding-right: 4rem;
+}
+
+.hr-header{
+    border: 0.5px solid rgba(221, 212, 212, 0.741);
+    margin: 0.5rem 0;
+}
 #info{
     text-align: center;
     font-size: 1.4rem;
@@ -39,6 +51,7 @@ h1{
 p{
   font-family: "bebas neue", sans-serif;
 }
+
 
 #btn-nuevo-partido, #btn-seleccionar-partidos {
   background: #1e7f3b;
@@ -167,7 +180,7 @@ h3{
     padding-left: 1rem;
 }
 
-#ubi{
+.ubi{
     position: absolute;
     width: auto;
     height: 1rem;
@@ -176,8 +189,7 @@ h3{
     border-radius: 0.2rem;
     background-color: rgba(200, 200, 200, 0.5);
     padding: 1.1rem;
-    top: 19.3rem;
-    
+    top: 19.3rem; 
 }
 
 .refrescar{
@@ -294,4 +306,5 @@ footer{
   padding: 1rem;
   background: black;
   color: white;
+  text-align: center;
 }
