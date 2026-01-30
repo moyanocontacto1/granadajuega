@@ -10,7 +10,7 @@ const pantallaCrear = document.getElementById("pantalla-crear-partido");
 const inputFechaHora = document.querySelector('input[type="datetime-local"]');
 const precioCancha = document.getElementById("precioCancha");
 const radiosTipo = document.querySelectorAll('input[name="tipo"]');
-cont apuntarse = document.getElementById("apuntarse");
+const apuntarse = document.getElementById("apuntarse");
 
 const precios = {
   7: 50,

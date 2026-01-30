@@ -118,6 +118,10 @@ h3 {
   display: flex;
 }
 
+.anotados{
+  text-decoration: none;
+}
+
 #apuntarse{
     position: absolute;
     padding-top: 0.5rem;
@@ -165,12 +169,14 @@ h3{
 #ubi{
     position: absolute;
     width: auto;
-    height: auto;
+    height: 1rem;
     color: black;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border-radius: 0.2rem;
     background-color: rgba(200, 200, 200, 0.5);
-    top: 20rem
+    padding: 1.1rem;
+    top: 19.3rem;
+    
 }
 
 .refrescar{
@@ -181,6 +187,7 @@ h3{
     position: relative;
     border: 1px solid #1a6640;
     border-radius: 0.2rem;
+    text-decoration: none;
 }
 
 .anotados{

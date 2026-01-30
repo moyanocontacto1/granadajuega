@@ -4,8 +4,7 @@ const anotados = document.querySelector(".anotados");
 const apuntarmeAhoraForm = document.getElementById("apuntarme-form");
 
 
-
-/*   ESTO ES PARA CUANDO TOCAN APUNTATE Y SALE LA CONFIRMACION 
+/*   ESTO ES PARA CUANDO TOCAN APUNTATE Y llenan el formulario y SALE LA CONFIRMACION 
 btnApuntarse.addEventListener('click', () => {
   if (confirm("¿Confirmar anotación para el partido?")) {
     alert("Anotación confirmada.");
