@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APUNTARSE FORMULARIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Granada Juega⚽</h1><br>
+    <h2>Simple Registro Para Jugar</h2>
+    </header>
+
+<main class="contenedor-form">   
+<form class="form-apuntate">
+  <input type="text" name="nombre" placeholder="Nombre" required>
+
+  <input type="text" name="apellido" placeholder="Apellido" required>
+<label for="opciones-menu">Posicion:</label>
+  <select id="opciones-menu" name="opciones" required>
+    <option value="opcion1">Arquero</option>
+    <option value="opcion2">Defensa</option>
+    <option value="opcion3">Medio</option>
+    <option value="opcion4">Delantero</option>
+  </select>
+
+  <p>Forma de pago:</p>
+  <label>
+    <input type="checkbox" name="pago" value="efectivo">
+    Efectivo
+  </label>
+
+  <label>
+    <input type="checkbox" name="pago" value="transferencia">
+    Transferencia
+  </label>
+
+  <button type="submit">Enviar registro</button>
+</form>
+</main> 
+</body>
+</html>

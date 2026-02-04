@@ -96,16 +96,34 @@ p{
      position: absolute;   /* CLAVE */
   bottom: 12px;
   left: 12px;
-
   color: white;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.3rem;
   letter-spacing: 1px;
-
   background: rgba(0, 0, 0, 0.55); /* contraste */
   padding: 0.4rem 0.8rem;
   border-radius: 8px;
 }
+
+
+.contenedor-form {
+  padding: 1rem;
+}
+
+.form-apuntate {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  margin: auto;
+}
+
+.form-apuntate label {
+  display: flex;
+  gap: 3px;
+  cursor: pointer;
+}
+
 
 h2 {
     margin-left: 1rem;
@@ -324,4 +342,18 @@ footer{
   background: black;
   color: white;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  main.contenedor-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .form-apuntate {
+    max-width: 360px;
+    padding: 1.5rem;
+  }
 }

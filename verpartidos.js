@@ -1,7 +1,9 @@
-const btnRefrescar = document.querySelectorAll(".refrescar");
-const btnApuntarse = document.getElementById("apuntarse");
-const anotados = document.querySelector(".anotados");
-const apuntarmeAhoraForm = document.getElementById("apuntarme-form");
+const RefrescarBtn = document.querySelector(".refrescar");
+const apuntarseBtn = document.getElementById("apuntarse");
+const anotadosBtn = document.querySelector(".anotados");
+
+
+
 
 
 /*   ESTO ES PARA CUANDO TOCAN APUNTATE Y llenan el formulario y SALE LA CONFIRMACION 
