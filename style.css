@@ -80,7 +80,7 @@ p{
 
 #img-cancha{
     width: 90%;
-    position: relative
+    position: relative;
     display: block;
     padding: 1rem;
     border-radius: 15px;
@@ -133,6 +133,7 @@ h3 {
 
 #prox-part{
   display: flex;
+  flex-direction: column;
 }
 
 #prox-part-dos{
@@ -141,12 +142,19 @@ h3 {
 
 .anotados{
   text-decoration: none;
+  margin-left: auto;
+}
+
+.anotados:hover{
+  text-decoration: none;
+  margin-left: auto;
+  color: black;
 }
 
 #apuntarse{
     position: absolute;
     padding-top: 0.5rem;
-    top: 11rem;
+    top: 15.5rem;
     right: 5rem;
     padding-left: 0.7rem;
     border-radius: 0.2rem;
@@ -159,25 +167,8 @@ h3 {
     padding-top: 0.5rem;
     padding-left: 1rem;
     border-radius: 0.2rem;
-    color: #fff;
+    color: #333;
     background-color: #43f19a;
-    font-size: 1.3rem;
-}
-
-.data-part-fecha{
-    position: absolute;
-    padding-top: 0.5rem;
-    top: 12.5rem;
-    padding-left: 1rem;
-    color: black;
-}
-
-.data-part-jugadores{
-    position: absolute;
-    padding-top: 0.5rem;
-    top: 14rem;
-    padding-left: 1rem;
-     color: black;
 }
 
 h3{
@@ -187,16 +178,33 @@ h3{
     padding-left: 1rem;
 }
 
+#estado, .data-part-jugadores, .data-part-fecha{
+  position: absolute;
+  padding-top: 0.5rem;
+  top: 17rem;
+  padding-right: 3rem;
+  color: white;
+}
+
+.data-part-fecha{
+    top: 16rem;
+
+}
+
+.data-part-jugadores{
+  top: 15rem;
+}
 .ubi{
-    position: absolute;
-    width: auto;
-    height: 1rem;
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: block;
     color: black;
-    font-size: 0.9rem;
+    text-align: center;
+    font-size: 0.7rem;
     border-radius: 0.2rem;
     background-color: rgba(200, 200, 200, 0.5);
     padding: 1.1rem;
-    top: 19.3rem; 
 }
 
 .refrescar{
@@ -208,6 +216,7 @@ h3{
     border: 1px solid #1a6640;
     border-radius: 0.2rem;
     text-decoration: none;
+    padding: 0.4rem;
 }
 
 .anotados{
@@ -218,6 +227,7 @@ h3{
     position: relative;
     border: 1px solid #1a6640;
     border-radius: 0.2rem;
+    padding: 0.4rem;
 }
 
 #conteiner{
@@ -280,9 +290,9 @@ legend {
    font-size: 1.5rem;
 }
 
-.conteiner-botones{
-    display: block;
-    gap: 3rem;
+#conteiner-botones{
+    display: flex;
+    gap: 15.4rem;
 }
 
 button {
@@ -294,7 +304,7 @@ button {
 }
 
 p{
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 ul {
