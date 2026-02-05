@@ -5,35 +5,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="formulario.css">
-<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="style.css">
     <title>Formulario de Creación de Partido</title>
 </head>
 <body>
     <header>
-      <h1>Granada Juega⚽</h1> 
-     <h2 id="titulo">Siempre siguiendo la jugada</h2>
-     <hr class="hr-header">
-     <div id="parte-header">
-     <h2 id="header-content">➕ Nuevo Partido</h2>
-     <hr class="hr-header">
-     </div>
+      <h1>Granada Juega⚽</h1>
+     <h2 id="titulo">➕ Nuevo Partido</h2>
 </header>
 <main>
+    <strong><p id="info-importante">Dato importante al crear el partido: <br>
+      Consultar en la cancha elegida a jugar horarios disponibles y en base a ello crea tu partido</strong></p> <br>
 
     <section id="pantalla-crear-partido">
                  <form>
                         <label>
-                          Nombre y apellido del organizador
-                          <input type="text" placeholder="Ej: Pedro Garcia" required>
+                          Nombre y apellido
+                          <input type="text" placeholder="Organizador" required>
                         </label>
                         <label>
                           Fecha y hora
                           <input type="datetime-local" required>
                         </label>
                         <label>
-                          Agregar jugador (opcional)
-                          <input type="text" placeholder="Ej: Lucas Gonzalez">
+                          Ubicación de la cancha (Direccion de google maps)
+                          <input type="text" placeholder="Ej: Campo Ramirez Paz, Avenida Europa 17" required>
+                        </label>  
+                          Agregar jugador
+                          <input type="text" placeholder="Opcional">
                         </label>
 
                         <fieldset>
@@ -56,16 +55,15 @@
                         </fieldset>
 
                         <p id="precioCancha">
-                <strong>Precio de la cancha:</strong>
-                <span id="precioValor">—</span>
-              </p>
-
-
+                          <strong>Precio de la cancha:(por jugador)
+                          </strong>
+                          <span id="precioValor">—</span>
+                       </p>
                         <button id="crear-partido">Crear partido</button>
                         <button id="btn-cancelar">Cancelar</button>
                 </form>
       </section>
     </main>
-    <script src="formulario.js"></script>
+    <script src="form-crear-partido.js"></script>
 </body>
 </html>

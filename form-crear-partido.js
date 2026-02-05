@@ -12,6 +12,7 @@ const precioCancha = document.getElementById("precioCancha");
 const radiosTipo = document.querySelectorAll('input[name="tipo"]');
 const apuntarse = document.getElementById("apuntarse");
 
+/*CALCULAR PRECIO LO VOY A IMPLEMENTAR MAS ADELANTE.
 const precios = {
   7: 50,
   8: 60,
@@ -28,6 +29,7 @@ radiosTipo.forEach(radio => {
     `;
   });
 });
+*/
 
 inputFechaHora.min = new Date().toISOString().slice(0, 16);
 
@@ -38,14 +40,20 @@ form.addEventListener("submit", (e) => {
   const fechaHora = form.querySelector('input[type="datetime-local"]').value;
   const tipoFutbol = form.querySelector('input[name="tipo"]:checked');
 
-  // 1️⃣ Validar nombre
+  // 1 Validar nombre
   if (nombre === "") {
     alert("Por favor ingresá el nombre del creador.");
     return;
   }
 
-  // 2️⃣ Validar fecha y hora
+  // 2 Validar fecha y hora
   if (!fechaHora) {
+    alert("Por favor seleccioná una fecha y hora.");
+    return;
+  }
+
+  // 2.2 validar Celular 
+  if (!) {
     alert("Por favor seleccioná una fecha y hora.");
     return;
   }
@@ -58,15 +66,15 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  // 3️⃣ Validar tipo de fútbol
+  // 3 Validar tipo de fútbol
   if (!tipoFutbol) {
     alert("Por favor seleccioná un tipo de fútbol.");
     return;
   }
 
   // ✅ Todo OK
-  alert("¡Partido creado correctamente! ⚽");
-  window.location.href = "index.html";
+  confirm("¡Lo has creado correctamente⚽! ¿Quieres ver tu partido creado en la seccion ver partidos disponibles?");
+  window.location.href = "ver-partidos.html";
 
   // Opcional: volver a la pantalla home
   pantallaCrear.hidden = true;
@@ -110,3 +118,27 @@ if (btnAnotarse) {
   });
 }
 
+document.getElementById('crear-partido').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que la página se recargue
+
+    // 1. Capturar los datos
+    const nuevoPartido = {
+        fecha: document.getElementById('fecha').value,
+        hora: document.getElementById('hora').value,
+        ubicacion: document.getElementById('ubicacion').value,
+        jugadores: "1 / 14",
+        estado: "Activo"
+    };
+
+    // 2. Guardar en LocalStorage
+    // Obtenemos los partidos que ya existan o creamos un array vacío
+    let partidos = JSON.parse(localStorage.getItem('misPartidos')) || [];
+    partidos.push(nuevoPartido);
+    localStorage.setItem('misPartidos', JSON.stringify(partidos));
+
+    // 3. Alerta y Redirección
+    alert("¡Partido creado correctamente!\nTu partido creado se verá en el menú principal.");
+    
+    // 4. Enviar al index
+    window.location.href = "index.html"; 
+});

@@ -28,6 +28,16 @@ header {
   border-bottom: #333 solid 4px;
 }
 
+#info-importante{
+    text-align: center;
+    font-size: 1rem;
+    background-color: #bb9a9a;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
 h1{
     font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 1px;
@@ -160,7 +170,6 @@ h3 {
 
 .anotados{
   text-decoration: none;
-  margin-left: auto;
 }
 
 .anotados:hover{
@@ -171,22 +180,24 @@ h3 {
 
 #apuntarse{
     position: absolute;
-    padding-top: 0.5rem;
     top: 15.5rem;
     right: 5rem;
-    padding-left: 0.7rem;
+    padding: 0.5rem;
     border-radius: 0.2rem;
     color: #fff;
     background-color: #43f19a;
+    text-decoration: none;
 }
 
 #apuntarse:hover{
     position: absolute;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
+    top: 15.5rem;
+    right: 5rem;
+    padding: 0.5rem;
     border-radius: 0.2rem;
     color: #333;
     background-color: #43f19a;
+    text-decoration: none;
 }
 
 h3{
@@ -219,23 +230,12 @@ h3{
     display: block;
     color: black;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 1rem;
     border-radius: 0.2rem;
     background-color: rgba(200, 200, 200, 0.5);
     padding: 1.1rem;
 }
 
-.refrescar{
-    width: auto;
-    height: auto;
-    color: white;
-    background-color: #2cac6c;
-    position: relative;
-    border: 1px solid #1a6640;
-    border-radius: 0.2rem;
-    text-decoration: none;
-    padding: 0.4rem;
-}
 
 .anotados{
     width: auto;
@@ -342,6 +342,86 @@ footer{
   background: black;
   color: white;
   text-align: center;
+}
+
+/* --- ESTILOS BASE (MOBILE FIRST) --- */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10vh auto; /* Un poco más arriba en móviles */
+  padding: 20px;
+  border-radius: 15px;
+  width: 85%; /* Ocupa casi todo el ancho en móvil */
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+}
+
+.lista-jugadores {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.lista-jugadores li {
+  padding: 12px 5px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-cerrar-modal {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* --- AJUSTES PARA PANTALLAS GRANDES (TABLET/PC) --- */
+@media (min-width: 768px) {
+  .modal-content {
+    width: 400px; /* En PC se mantiene pequeña y elegante */
+    margin: 15vh auto;
+    padding: 30px;
+  }
+  
+  .lista-jugadores li {
+    font-size: 16px; /* Letra un poco más grande en PC */
+  }
 }
 
 @media (min-width: 768px) {
