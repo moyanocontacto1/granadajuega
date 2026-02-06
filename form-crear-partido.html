@@ -18,7 +18,11 @@
       Consultar en la cancha elegida a jugar horarios disponibles y en base a ello crea tu partido</strong></p> <br>
 
     <section id="pantalla-crear-partido">
-                 <form>
+          <div id="mensaje-exito" class="mensaje-exito hidden">
+      ✅ ¡Partido creado correctamente!
+         </div>
+
+                 <form id="form-crear-partido" autocomplete="off">
                         <label>
                           Nombre y apellido
                           <input type="text" placeholder="Organizador" required>
@@ -31,6 +35,7 @@
                           Ubicación de la cancha (Direccion de google maps)
                           <input type="text" placeholder="Ej: Campo Ramirez Paz, Avenida Europa 17" required>
                         </label>  
+                        <label>
                           Agregar jugador
                           <input type="text" placeholder="Opcional">
                         </label>
@@ -53,13 +58,13 @@
                             Fútbol 11
                           </label>
                         </fieldset>
-
+                        <!-- DESPUES VEMOS DE AGREGAR ESTO
                         <p id="precioCancha">
                           <strong>Precio de la cancha:(por jugador)
                           </strong>
                           <span id="precioValor">—</span>
-                       </p>
-                        <button id="crear-partido">Crear partido</button>
+                       </p> -->
+                        <button id="crear-partido" type="submit">Crear partido</button>
                         <button id="btn-cancelar">Cancelar</button>
                 </form>
       </section>

@@ -7,7 +7,7 @@
 
 body {
   color: #333;
-  background-color:#EDEDED;
+  background-color:#fff;
   font-family: 'Montserrat', system-ui, sans-serif;
   height: auto;
   margin: 0;
@@ -38,6 +38,7 @@ header {
     text-transform: uppercase;
 }
 
+
 h1{
     font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 1px;
@@ -60,6 +61,33 @@ h1{
     text-align: center;
     font-size: 1.4rem;
 }
+
+.mensaje-exito {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50px);
+  background-color: #43f19a;
+  color: #fff;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+
+.mensaje-exito.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
 
 p{
   font-family: "bebas neue", sans-serif;
@@ -87,6 +115,33 @@ p{
      position: relative;   /* CLAVE */
      width: 100%;
 }
+
+  .como-funciona {
+  margin: 1rem auto 2rem;
+  max-width: 360px; /* un poco menos que el ancho del móvil */
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.como-funciona h2 {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+}
+
+.paso {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.paso span {
+  font-size: 1.8rem;
+}
+
 
 #img-cancha{
     width: 90%;
@@ -148,11 +203,15 @@ h3 {
 
 
 .card-partido {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background: white;
   border-radius: 14px;
   padding: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  gap: 1rem;
 }
 
 #pantalla-home-content{
@@ -201,7 +260,6 @@ h3 {
 }
 
 h3{
-    position: absolute;
     padding-top: 0.5rem;
     top: 18rem;
     padding-left: 1rem;
